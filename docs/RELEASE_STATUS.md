@@ -1,6 +1,6 @@
 # 发布准备
 
-发布目标：[zx-huang0911/CrackZoo](https://github.com/zx-huang0911/CrackZoo)。2026-09-19 已确认是新建公开空仓库，当前正在准备首次源码提交。
+发布目标：[zx-huang0911/CrackZoo](https://github.com/zx-huang0911/CrackZoo)。2026-09-19 已发布源码、论文图表和测试记录。首次源码提交：`9769f14faff8cfcd3defc39b7622c41e9b0f93e4`。
 
 ## 已完成
 
@@ -11,6 +11,6 @@
 
 ## 发布方式
 
-从当前文件树创建不含旧历史的首次提交，推送后检查 GitHub Actions 和首页资源。远程 CI 结果在运行后另行记录；本地短程训练通过不代表论文精度复现。
+新仓库以许可文本初始化，再提交完整源码，不继承旧私有仓库历史。远程 CI 见 [GitHub Actions](https://github.com/zx-huang0911/CrackZoo/actions)；本地短程训练通过不代表论文精度复现。
 
 许可依据和作者确认见 [release_review.json](../configs/release_review.json)。论文全文和演示网页可后续补充。
