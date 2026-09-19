@@ -1,0 +1,41 @@
+{
+  "model": "csnet",
+  "status": "passed",
+  "device": "cpu",
+  "gpu": null,
+  "python": "3.12.12",
+  "torch": "2.9.1+cpu",
+  "torchvision": "0.24.1+cpu",
+  "cuda_runtime": null,
+  "seed": 17,
+  "steps": 3,
+  "batch_size": 2,
+  "image_size": 64,
+  "train_data": "4 synthetic line masks",
+  "validation_data": "2 separately generated line masks (seed 29)",
+  "loss": "GeneralizedDiceLoss",
+  "training_losses": [
+    0.688940703868866,
+    0.6801115274429321,
+    0.6101014614105225
+  ],
+  "validation_loss": 0.6526286602020264,
+  "finite_gradients": true,
+  "parameters_updated": 202,
+  "checkpoint_strict_reload": true,
+  "optimizer_state_reloaded": true,
+  "prediction_reload_matches": true,
+  "checkpoint_sha256": "8916d89d2e4012bebd3c7add3809598972d814cd585b987af0d024d2708d804d",
+  "checkpoint_retained": false,
+  "output_shape": [
+    2,
+    2,
+    64,
+    64
+  ],
+  "pretrained_weights": false,
+  "precision": "float32",
+  "peak_allocated_mib": null,
+  "seconds": 0.76,
+  "scope": "synthetic-data training harness; not native CLI or research accuracy reproduction"
+}

@@ -1,0 +1,45 @@
+version: v0.2.0
+data:
+  train_image_root: ../data/private/train/images
+  train_label_root: ../data/private/train/labels_threshold_auto_v033
+  train_mask_root: ../data/private/train/masks
+  val_image_root: ../data/private/val/images
+  val_label_root: ../data/private/val/labels_threshold_auto_v033
+  val_mask_root: ../data/private/val/masks
+model:
+  cfg_path: cfg/yolov4-tiny.cfg
+  num_classes: 4
+  class_names:
+  - crack
+  - repair
+  - marking
+  - other
+  image_size: 416
+loss:
+  alpha_threshold_loss: 50.0
+  anchor_t: 4.0
+  box_weight: 0.05
+  obj_weight: 1.0
+  cls_weight: 0.5
+  cls_pw: 1.0
+  obj_pw: 1.0
+  fl_gamma: 0.0
+train:
+  seed: 42
+  epochs: 50
+  batch_size: 4
+  workers: 0
+  learning_rate: 0.0005
+  weight_decay: 0.0005
+  val_interval: 1
+  save_dir: runs/crack_v020_basic
+  resume_checkpoint: ''
+val:
+  conf_thres: 0.25
+  iou_thres: 0.45
+  save_visualization: true
+  max_visualizations: 12
+  vis_dir: runs/crack_v020_basic/val_vis
+notes:
+- Portable configuration template; requires valid threshold-channel detection labels.
+- Validation data must be disjoint from training and held-out test data.

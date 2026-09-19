@@ -1,0 +1,19 @@
+{
+  "model_variant": "baseline_plain",
+  "input_size": 640,
+  "batch_size": 2,
+  "val_batch_size": 1,
+  "total_itrs": 300,
+  "lr": 0.001,
+  "val_interval": 50,
+  "print_interval": 10,
+  "tiny_overfit": true,
+  "tiny_overfit_num_samples": 8,
+  "tiny_overfit_disable_heavy_aug": true,
+  "tiny_overfit_eval_on_train": true,
+  "enable_paper_metrics": true,
+  "save_vis": true,
+  "num_vis_samples": 2,
+  "save_train_vis": true,
+  "save_dir": "outputs/tiny_baseline_plain"
+}

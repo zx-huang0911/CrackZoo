@@ -1,0 +1,5 @@
+train: ./inference/images
+val: ./inference/images
+
+nc: 1
+names: ['smoke']

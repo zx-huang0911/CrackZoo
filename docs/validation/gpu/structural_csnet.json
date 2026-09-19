@@ -1,0 +1,27 @@
+{
+  "model": "csnet",
+  "scope": "full model",
+  "input_shape": [
+    2,
+    3,
+    64,
+    64
+  ],
+  "output_shape": [
+    2,
+    2,
+    64,
+    64
+  ],
+  "finite_output": true,
+  "finite_gradients": true,
+  "parameters": 3524710,
+  "seed": 17,
+  "device": "cuda",
+  "cuda_runtime": "12.6",
+  "torch": "2.9.1+cu126",
+  "torchvision": "0.24.1+cu126",
+  "seconds": 0.553,
+  "pretrained_weights": false,
+  "validation": "random-input forward/backward; no accuracy claim"
+}

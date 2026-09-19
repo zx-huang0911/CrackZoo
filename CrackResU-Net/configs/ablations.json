@@ -1,0 +1,26 @@
+{
+  "main": {
+    "variant": "main",
+    "description": "Shallow SA + deep PRAM + auxiliary head"
+  },
+  "without_sa": {
+    "variant": "no_sa",
+    "description": "Identity shallow skips + deep PRAM + auxiliary head"
+  },
+  "without_aux": {
+    "variant": "no_aux",
+    "description": "Shallow SA + deep PRAM + no auxiliary head"
+  },
+  "without_pram": {
+    "variant": "no_pram",
+    "description": "Shallow SA + deep identity skips + auxiliary head"
+  },
+  "all_pram": {
+    "variant": "all_pram",
+    "description": "PRAM on all four skip connections"
+  },
+  "all_sa": {
+    "variant": "all_sa",
+    "description": "SA on all four skip connections"
+  }
+}

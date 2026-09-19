@@ -1,0 +1,34 @@
+{
+  "samples": 4,
+  "aggregation": "per-image macro mean",
+  "threshold": 0.5,
+  "grid_size": 16,
+  "grid_positive_threshold": 0.05,
+  "tolerance_px": 2,
+  "tolerance_geometry": "square (Chebyshev); foreground tolerance, not extracted boundaries",
+  "empty_foreground_overlap": 0,
+  "empty_foreground_tolerance_f1": 1,
+  "cldice_available": false,
+  "inputs": [
+    {
+      "sample": "synthetic_test_00.png",
+      "gt_sha256": "71217e465a7d5d1f507372d90c87b645950dc5399176c3b9d7ef587cd33f6e72",
+      "pred_sha256": "ac4e19dde8c76ffae85cc65942c5e870cd632d935f9bfc3002976e4f4fde1931"
+    },
+    {
+      "sample": "synthetic_test_01.png",
+      "gt_sha256": "aa6769c6d67c2956f020daebb55303daf1ef5f276a1b617a1e03ae8dcf9060ce",
+      "pred_sha256": "dfa15609eaa5973b489a519e9d99ae7b7fc80842434338924e93fae32997ff27"
+    },
+    {
+      "sample": "synthetic_test_02.png",
+      "gt_sha256": "dc3c728d1628cdca5bcbc79763fa6c2716ba69d2caa8b411b71d9b2676ade9ba",
+      "pred_sha256": "f771e131c52d74bcbc0e6b7205e6c54668d0fba10dd431dd218cd4a76d516479"
+    },
+    {
+      "sample": "synthetic_test_03.png",
+      "gt_sha256": "fc5d19eb4bb4f5720ebfb9451c43ff45db3d7eabc8c3f78006aca1908a7ab6cd",
+      "pred_sha256": "b3005b7f8b73a1f962e7dbc64571181d7085256d11cc2c3ef4cc28463f1ca4c6"
+    }
+  ]
+}

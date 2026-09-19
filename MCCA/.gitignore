@@ -1,0 +1,15 @@
+# Ignore output folder
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+venv/
+env/
+
+# PyTorch / model files
+*.pt
+*.pth

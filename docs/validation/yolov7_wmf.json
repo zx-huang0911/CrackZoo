@@ -1,0 +1,26 @@
+{
+  "model": "yolov7_wmf",
+  "scope": "full model",
+  "input_shape": [
+    2,
+    3,
+    64,
+    64
+  ],
+  "output_shape": [
+    2,
+    1,
+    64,
+    64
+  ],
+  "finite_output": true,
+  "finite_gradients": true,
+  "parameters": 53762457,
+  "seed": 17,
+  "device": "cpu",
+  "torch": "2.9.1+cpu",
+  "torchvision": "0.24.1+cpu",
+  "seconds": 1.778,
+  "pretrained_weights": false,
+  "validation": "random-input forward/backward; no accuracy claim"
+}

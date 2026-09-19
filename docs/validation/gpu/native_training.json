@@ -1,0 +1,79 @@
+{
+  "device": "cuda:0",
+  "input": "generated line-mask PNGs, no real dataset",
+  "image_size": 64,
+  "batch_size": 2,
+  "mcca": {
+    "status": "passed",
+    "training_iterations": 2,
+    "train_samples": 4,
+    "validation_samples": 4,
+    "validation": {
+      "epoch": 1,
+      "itr": 2,
+      "threshold": 0.55,
+      "IoU": 0.036743164062275735,
+      "Dice": 0.07088190274301848,
+      "Accuracy": 0.036743164062275735,
+      "Precision": 0.036743164062275735,
+      "Recall": 0.9999999998338871,
+      "MAE": 0.9632568359316207
+    }
+  },
+  "yolov7_wmf": {
+    "status": "passed",
+    "epochs": 1,
+    "training_batches": 2,
+    "validation_batches": 1,
+    "validation": [
+      {
+        "epoch": 1,
+        "loss": 1.662537157535553,
+        "bce": 0.724381685256958,
+        "dice_loss": 0.938155472278595,
+        "threshold": 0.5,
+        "pos_weight": 1.0,
+        "precision": 0.03808593749535084,
+        "recall": 0.9999999967948718,
+        "f1": 0.0733771635403951,
+        "iou": 0.03808593749535084,
+        "dice": 0.07337723423408075
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "model": "mcca",
+      "path": ".local/native-train/mcca/mcca_seed1/best_full_mcca.pth",
+      "bytes": 158927941,
+      "sha256": "34ff2506a188ca3fc5b49932e8dfc2ac1560adce79f8c1e9175105ff08a33777",
+      "zip_integrity": true,
+      "serialized_cuda_device": true
+    },
+    {
+      "model": "mcca",
+      "path": ".local/native-train/mcca/mcca_seed1/latest_full_mcca.pth",
+      "bytes": 158927941,
+      "sha256": "e3cf70d0894469f71fa190ffa3c0367aa595b380fbf08017ae3d6ded6acb52aa",
+      "zip_integrity": true,
+      "serialized_cuda_device": true
+    },
+    {
+      "model": "yolov7_wmf",
+      "path": ".local/native-train/yolov7/yolov7_wmf/step3_seed1/last.pt",
+      "bytes": 538432803,
+      "sha256": "8eaa5ae40765ad78845117d6e11e70b8766c606ced7d986213db855032ea93a0",
+      "zip_integrity": true,
+      "serialized_cuda_device": true
+    },
+    {
+      "model": "yolov7_wmf",
+      "path": ".local/native-train/yolov7/yolov7_wmf/step3_seed1/best.pt",
+      "bytes": 538432803,
+      "sha256": "8eaa5ae40765ad78845117d6e11e70b8766c606ced7d986213db855032ea93a0",
+      "zip_integrity": true,
+      "serialized_cuda_device": true
+    }
+  ],
+  "scope": "native training/validation/checkpoint output; metrics are synthetic-data plumbing checks only"
+}

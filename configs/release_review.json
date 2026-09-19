@@ -1,0 +1,22 @@
+{
+  "model_code_provenance": {
+    "status": "resolved",
+    "detail": "The author confirmed that MCCA and CrackResU-Net are self-implemented from the papers; torchvision supplies the ResNet backbones."
+  },
+  "yolov4_license_mapping": {
+    "status": "resolved",
+    "detail": "Historical GPL v3 basis recorded from the upstream maintainer statement and pinned YOLOv3/YOLOv5 license commits; 41 files match pinned PyTorch_YOLOv4 upstream exactly. See YOLOv4_DAE/LICENSE.md and docs/yolov4_license_reference.json. Current AGPL reference does not replace historical terms."
+  },
+  "publication_history": {
+    "status": "resolved",
+    "detail": "Verified new empty public repository zx-huang0911/CrackZoo (GitHub id 1377129595, created 2026-09-19). Publish a parentless source snapshot; do not include old private repository history."
+  },
+  "thesis_visual_display": {
+    "status": "resolved",
+    "detail": "The author confirmed that figures 5.1 and 5.6 may be displayed publicly in this project. This is an author confirmation, not an independent dataset-rights audit or a grant to redistribute the underlying datasets."
+  },
+  "original_code_license": {
+    "status": "resolved",
+    "detail": "The author approved GPL-3.0-or-later for original code. The grant and scope are recorded in LICENSE.md, with full GPL text in LICENSE; third-party materials keep their own terms."
+  }
+}

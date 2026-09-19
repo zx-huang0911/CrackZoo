@@ -1,0 +1,44 @@
+[
+  {
+    "figure": "5.2",
+    "archive_member": "CSNet/Final/2_Thesis/v5_0_elec/latex_src/figures/python_reproducible/fig5_2_same_domain_pixel_iou.pdf",
+    "source_sha256": "5b4e03936f82faac0c3e74731e4f3e5752f3c607aeaca720c22869addce2b2ea",
+    "preview": "docs/assets/same-domain-iou.png",
+    "preview_sha256": "47be93f99173e4ac488425939ed597573eb309aa18a9bcaabe228d0a7652b900",
+    "rendering": "pdftoppm -singlefile -scale-to 1800 -png; original chart, no redrawing"
+  },
+  {
+    "figure": "5.4",
+    "archive_member": "CSNet/Final/2_Thesis/v5_0_elec/latex_src/figures/python_reproducible/fig5_4_same_domain_pixel_iou_vs_grid_f1.pdf",
+    "source_sha256": "1ee3fc929db12a75422a2d0559a533dd26b3d12ba443de051b464bdeb0f3bdf0",
+    "preview": "docs/assets/pixel-iou-grid-f1.png",
+    "preview_sha256": "ce3b4bc49ca1ccf923117b8f8d04739df8f3d6c246f5960de8eb2d1edc67fc3e",
+    "rendering": "pdftoppm -singlefile -scale-to 1800 -png; original chart, no redrawing"
+  },
+  {
+    "figure": "5.7",
+    "archive_member": "CSNet/Final/2_Thesis/v5_0_elec/latex_src/figures/python_reproducible/fig5_7_module_evidence_delta.pdf",
+    "source_sha256": "85859f84a73c4c908461d1de620a7ccb0b8c5001fc2bbfbc9d7c526ae34bbb43",
+    "preview": "docs/assets/module-ablation.png",
+    "preview_sha256": "1121ed652dfcad1a9821650f99aef6c22470d55f2e692321db3a862b3937f049",
+    "rendering": "pdftoppm -singlefile -scale-to 1800 -png; original chart, no redrawing"
+  },
+  {
+    "figure": "5.1",
+    "archive_member": "CSNet/Final/2_Thesis/v5_0_elec/latex_src/figures/python_reproducible/fig5_1_mixed_monitor_visual_example.pdf",
+    "source_sha256": "70c77216a589e5217d8f4cb8783effb6abd5400c356871abd4960c4180d6881c",
+    "preview": "docs/assets/pixel-predictions.png",
+    "preview_sha256": "a572f4b8ff7bfe51015db2cad43cb30503a9612c4eab98a2a6a3d8b87359d9b2",
+    "public_display_permission": "Author confirmed public display in CrackZoo; no underlying dataset redistribution grant.",
+    "rendering": "pdftoppm -singlefile -scale-to 1800 -png; original figure, no redrawing"
+  },
+  {
+    "figure": "5.6",
+    "archive_member": "CSNet/Final/2_Thesis/v5_0_elec/latex_src/figures/python_reproducible/fig5_6_grid_visualization.pdf",
+    "source_sha256": "182d0dfed3f821f41e1e4972d948227b5a80e1e4f84485dbdf15dc7a1c48dd04",
+    "preview": "docs/assets/grid-predictions.png",
+    "preview_sha256": "e37a3cf1e9dc200993968c86f597a4208453a47d326322139bcffdb04c203919",
+    "public_display_permission": "Author confirmed public display in CrackZoo; no underlying dataset redistribution grant.",
+    "rendering": "pdftoppm -singlefile -scale-to 1800 -png; original figure, no redrawing"
+  }
+]

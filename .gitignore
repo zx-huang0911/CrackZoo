@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Experiment outputs
+runs/
+wandb/
+outputs/
+logs/
+tmp/
+reports/generated/
+**/runs/
+**/wandb/
+**/outputs/
+**/logs/
+**/checkpoints/
+**/weights/
+
+# Large model artifacts: keep local under models/<model>/<version>/, do not push.
+models/**/*.pt
+models/**/*.pth
+models/**/*.onnx
+models/**/*.engine
+models/**/*.weights
+models/**/*.pkl
+*.pt
+*.pth
+*.onnx
+*.engine
+*.weights
+
+# Datasets and generated media
+/data/
+/dataset/
+/datasets/data/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tif
+*.tiff
+*.mp4
+*.avi
+*.zip
+*.rar
+*.7z
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local preparation material, audit output and private research assets
+.local/
+/reports/
+/private/
+/models/
+*.ckpt
+*.npy
+*.npz
+*.pkl
+*.h5
+*.hdf5
+*.pdf
+*.docx
+*.pptx
+*.tar
+*.gz
+*.log
+!docs/assets/synthetic_example.png
+
+# Thesis aggregate plots reviewed for the project README
+!docs/assets/same-domain-iou.png
+!docs/assets/pixel-iou-grid-f1.png
+!docs/assets/module-ablation.png
+
+# Thesis visual examples in the local release candidate; display rights tracked in release_review.json
+!docs/assets/pixel-predictions.png
+!docs/assets/grid-predictions.png

@@ -1,0 +1,64 @@
+version: v0.5.0-local-dae-rawmask
+notes:
+- Offline raw-mask cache from a frozen basic-model checkpoint.
+- Standalone DAE training only; no detector retraining, no joint training.
+dataset:
+  dataset_root: ../data/private
+model:
+  cfg_path: cfg/yolov4-tiny.cfg
+  num_classes: 1
+  class_names:
+  - crack
+  image_size: 416
+cache:
+  seed: 50
+  cache_root: ../reports/dae_cache
+  frozen_basic_checkpoint: ../models/YOLOv4_DAE/detector.pt
+  checkpoint_selection_reason: Select on a disjoint validation set; supply your own
+    licensed checkpoint.
+  batch_size: 8
+  workers: 0
+  detector_conf_thres: 0.02
+  detector_iou_thres: 0.3
+  max_det: 300
+  vis_topk: 5
+  max_preview_panels: 8
+splits:
+  train:
+    image_root: ../data/private/train/images
+    mask_root: ../data/private/train/masks
+    label_root: ../data/private/train/labels_threshold_auto_v033
+  val:
+    image_root: ../data/private/val/images
+    mask_root: ../data/private/val/masks
+    label_root: ../data/private/val/labels_threshold_auto_v033
+  test:
+    image_root: ../data/private/test/images
+    mask_root: ../data/private/test/masks
+    label_root: ../data/private/test/labels_threshold_auto_v033
+dae_train:
+  save_dir: ../reports/dae_train
+  seed: 50
+  epochs: 30
+  batch_size: 8
+  workers: 0
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  bce_weight: 1.0
+  dice_weight: 1.0
+  val_interval: 2
+  vis_interval: 5
+  checkpoint_interval: 5
+  max_vis: 6
+integration_eval:
+  split: test
+  save_dir: ../reports/dae_eval
+  max_visualizations: 8
+  vis_topk: 5
+wandb:
+  enabled: false
+  project: crack-paper-repro
+  run_name: dae_v050_rawmask
+report:
+  docs_markdown: ../reports/dae_report.md
+  logs_markdown: ../reports/dae_log.md

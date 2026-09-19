@@ -1,0 +1,21 @@
+{
+  "python": "3.12.12",
+  "platform": "Linux x86_64",
+  "packages": {
+    "torch": "2.9.1+cpu",
+    "torchvision": "0.24.1+cpu",
+    "numpy": "1.26.4",
+    "pillow": "12.0.0",
+    "matplotlib": "3.10.8",
+    "pandas": "2.3.3",
+    "seaborn": "0.13.2",
+    "scikit-image": "0.26.0",
+    "tifffile": "2025.2.18",
+    "PyYAML": "6.0.3",
+    "psutil": "7.2.2",
+    "scipy": "1.16.3"
+  },
+  "environment": "temporary venv with system site packages; base environment not modified",
+  "date": "2026-09-19",
+  "device": "CPU"
+}

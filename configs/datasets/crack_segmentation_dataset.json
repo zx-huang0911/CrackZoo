@@ -1,0 +1,18 @@
+{
+  "name": "crack_segmentation_dataset",
+  "type": "external",
+  "root": "data/private",
+  "layout": {
+    "train_images": "train/images",
+    "train_masks": "train/masks",
+    "val_images": "val/images",
+    "val_masks": "val/masks",
+    "test_images": "test/images",
+    "test_masks": "test/masks"
+  },
+  "notes": [
+    "External dataset; obtain each source under its own terms.",
+    "Set CRACKZOO_DATASET or --dataset-root. Use disjoint train/val/test splits."
+  ],
+  "redistribution": "not_included"
+}

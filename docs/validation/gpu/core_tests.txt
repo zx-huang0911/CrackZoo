@@ -1,0 +1,14 @@
+test_command_paths_and_eval_entry (test_core.IntegrationTests.test_command_paths_and_eval_entry) ... ok
+test_demo_and_split_leakage (test_core.IntegrationTests.test_demo_and_split_leakage) ... ok
+test_no_silent_missing_predictions (test_core.IntegrationTests.test_no_silent_missing_predictions) ... ok
+test_empty_foreground_convention (test_core.MetricsTests.test_empty_foreground_convention) ... ok
+test_encoding_and_probability_threshold (test_core.MetricsTests.test_encoding_and_probability_threshold) ... ok
+test_grid_partial_edges (test_core.MetricsTests.test_grid_partial_edges) ... ok
+test_hand_calculated_confusion (test_core.MetricsTests.test_hand_calculated_confusion) ... ok
+test_invalid_masks (test_core.MetricsTests.test_invalid_masks) ... ok
+test_tolerance_geometry_and_zero_radius (test_core.MetricsTests.test_tolerance_geometry_and_zero_radius) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.730s
+
+OK

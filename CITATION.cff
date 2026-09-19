@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the original model papers as well as this implementation when applicable."
+title: "CrackZoo: pavement crack model reproduction and evaluation"
+type: software
+authors:
+  - family-names: Huang
+    given-names: Zixin
+repository-code: "https://github.com/zx-huang0911/CrackZoo"
+abstract: "Research implementations and mask evaluation tools collected from a bachelor's thesis."

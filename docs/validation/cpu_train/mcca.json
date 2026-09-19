@@ -1,0 +1,41 @@
+{
+  "model": "mcca",
+  "status": "passed",
+  "device": "cpu",
+  "gpu": null,
+  "python": "3.12.12",
+  "torch": "2.9.1+cpu",
+  "torchvision": "0.24.1+cpu",
+  "cuda_runtime": null,
+  "seed": 17,
+  "steps": 3,
+  "batch_size": 2,
+  "image_size": 64,
+  "train_data": "4 synthetic line masks",
+  "validation_data": "2 separately generated line masks (seed 29)",
+  "loss": "weighted BCE + Dice + side supervision",
+  "training_losses": [
+    3.146939754486084,
+    3.1389429569244385,
+    3.080860137939453
+  ],
+  "validation_loss": 3.1352405548095703,
+  "finite_gradients": true,
+  "parameters_updated": 125,
+  "checkpoint_strict_reload": true,
+  "optimizer_state_reloaded": true,
+  "prediction_reload_matches": true,
+  "checkpoint_sha256": "0533298f5dce9107dcb695d31f0969f81f84735c271217554f6644fc76a1b37c",
+  "checkpoint_retained": false,
+  "output_shape": [
+    2,
+    1,
+    64,
+    64
+  ],
+  "pretrained_weights": false,
+  "precision": "float32",
+  "peak_allocated_mib": null,
+  "seconds": 1.031,
+  "scope": "synthetic-data training harness; not native CLI or research accuracy reproduction"
+}

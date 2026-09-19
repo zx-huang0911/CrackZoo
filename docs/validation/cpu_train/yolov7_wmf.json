@@ -1,0 +1,41 @@
+{
+  "model": "yolov7_wmf",
+  "status": "passed",
+  "device": "cpu",
+  "gpu": null,
+  "python": "3.12.12",
+  "torch": "2.9.1+cpu",
+  "torchvision": "0.24.1+cpu",
+  "cuda_runtime": null,
+  "seed": 17,
+  "steps": 3,
+  "batch_size": 2,
+  "image_size": 64,
+  "train_data": "4 synthetic line masks",
+  "validation_data": "2 separately generated line masks (seed 29)",
+  "loss": "BCE + Dice",
+  "training_losses": [
+    1.484015941619873,
+    1.4708726406097412,
+    1.4605849981307983
+  ],
+  "validation_loss": 1.5143994092941284,
+  "finite_gradients": true,
+  "parameters_updated": 370,
+  "checkpoint_strict_reload": true,
+  "optimizer_state_reloaded": true,
+  "prediction_reload_matches": true,
+  "checkpoint_sha256": "d13378ffb9019dbc38a165f9d52518d6465424aaf6d1ee8ed2ffbab55919b563",
+  "checkpoint_retained": false,
+  "output_shape": [
+    2,
+    1,
+    64,
+    64
+  ],
+  "pretrained_weights": false,
+  "precision": "float32",
+  "peak_allocated_mib": null,
+  "seconds": 7.561,
+  "scope": "synthetic-data training harness; not native CLI or research accuracy reproduction"
+}

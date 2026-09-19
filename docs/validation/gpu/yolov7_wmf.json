@@ -1,0 +1,41 @@
+{
+  "model": "yolov7_wmf",
+  "status": "passed",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "python": "3.12.12",
+  "torch": "2.9.1+cu126",
+  "torchvision": "0.24.1+cu126",
+  "cuda_runtime": "12.6",
+  "seed": 17,
+  "steps": 3,
+  "batch_size": 2,
+  "image_size": 64,
+  "train_data": "4 synthetic line masks",
+  "validation_data": "2 separately generated line masks (seed 29)",
+  "loss": "BCE + Dice",
+  "training_losses": [
+    1.4842180013656616,
+    1.4806815385818481,
+    1.4696245193481445
+  ],
+  "validation_loss": 1.514404296875,
+  "finite_gradients": true,
+  "parameters_updated": 370,
+  "checkpoint_strict_reload": true,
+  "optimizer_state_reloaded": true,
+  "prediction_reload_matches": true,
+  "checkpoint_sha256": "1d7d5291f3d523e7fa892482e34c10f7f956ce93a582a7525b9d3e4c8c111bf8",
+  "checkpoint_retained": false,
+  "output_shape": [
+    2,
+    1,
+    64,
+    64
+  ],
+  "pretrained_weights": false,
+  "precision": "float32",
+  "peak_allocated_mib": 1496.7,
+  "seconds": 6.204,
+  "scope": "synthetic-data training harness; not native CLI or research accuracy reproduction"
+}

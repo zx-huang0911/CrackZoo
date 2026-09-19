@@ -1,0 +1,6 @@
+train_images: ../data/private/train/images
+train_masks: ../data/private/train/masks
+val_images: ../data/private/val/images
+val_masks: ../data/private/val/masks
+nc: 1
+names: [crack]

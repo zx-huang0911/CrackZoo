@@ -1,0 +1,10 @@
+{
+  "model": "crackresunet",
+  "variant": "main",
+  "split": "test",
+  "samples": 4,
+  "image_size": 64,
+  "output": "PNG binary masks at original dimensions",
+  "checkpoint_sha256": "cef36c9c18cbd8295d5448d5e7f64696dd8d2e6fa5a6f4919bd59b41646d7cad",
+  "validation": "Random checkpoint serialization and strict load; not trained accuracy"
+}

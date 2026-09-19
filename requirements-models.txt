@@ -1,0 +1,12 @@
+-r requirements.txt
+# Install the matching torch/torchvision pair separately; see docs/REPRODUCING.md.
+PyYAML>=6,<7
+requests>=2.31,<3
+opencv-python-headless>=4.8,<4.12
+matplotlib>=3.8,<4
+tqdm>=4.66,<5
+pandas>=2.2,<3
+seaborn>=0.13,<0.14
+psutil>=5.9,<8
+scikit-image>=0.22,<0.27
+tifffile>=2024,<2026

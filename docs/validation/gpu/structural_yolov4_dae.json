@@ -1,0 +1,34 @@
+{
+  "model": "yolov4_dae",
+  "scope": "full pipeline inference; separate detector raw-head and DAE backward",
+  "input_shape": [
+    2,
+    1,
+    64,
+    64
+  ],
+  "output_shape": [
+    2,
+    1,
+    64,
+    64
+  ],
+  "finite_output": true,
+  "finite_gradients": true,
+  "parameters": 255593,
+  "seed": 17,
+  "device": "cuda",
+  "cuda_runtime": "12.6",
+  "torch": "2.9.1+cu126",
+  "torchvision": "0.24.1+cu126",
+  "seconds": 0.956,
+  "pretrained_weights": false,
+  "validation": "random-input forward/backward; no accuracy claim",
+  "pipeline_input_shape": [
+    2,
+    3,
+    64,
+    64
+  ],
+  "parameter_scope": "DAE only; parameter count is not the full detector-plus-DAE"
+}

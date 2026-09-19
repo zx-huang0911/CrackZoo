@@ -1,0 +1,16 @@
+{
+  "model_variant": "baseline_plain",
+  "input_size": 640,
+  "batch_size": 2,
+  "val_batch_size": 1,
+  "total_itrs": 1000,
+  "lr": 0.001,
+  "val_interval": 100,
+  "print_interval": 20,
+  "tiny_overfit": false,
+  "enable_paper_metrics": true,
+  "save_vis": true,
+  "num_vis_samples": 2,
+  "save_train_vis": false,
+  "save_dir": "outputs/short_baseline_plain"
+}
