@@ -89,3 +89,6 @@ Thumbs.db
 # Thesis visual examples in the local release candidate; display rights tracked in release_review.json
 !docs/assets/pixel-predictions.png
 !docs/assets/grid-predictions.png
+
+# Thesis explicitly selected by the author for publication
+!docs/paper/thesis.pdf

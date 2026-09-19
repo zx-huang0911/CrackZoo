@@ -1,5 +1,6 @@
 """Check the tracked release snapshot, not ignored local research material."""
 from pathlib import Path
+import hashlib
 import argparse
 import json
 import re
@@ -13,6 +14,9 @@ ASSETS = {
     "docs/assets/module-ablation.png",
     "docs/assets/pixel-predictions.png",
     "docs/assets/grid-predictions.png",
+}
+APPROVED_DOCUMENTS = {
+    "docs/paper/thesis.pdf": "09a220fe6c7e500bc3b7997ddcba43a124a5834ec84d984f9e762c31f43a7138",
 }
 FORBIDDEN = {".pt", ".pth", ".ckpt", ".onnx", ".npy", ".npz", ".pkl", ".pdf", ".docx", ".pptx", ".zip", ".pyc"}
 PRIVATE_DIRS = {".local", "reports", "runs", "wandb", "checkpoints", "backend", "Agent_Logs"}
@@ -35,9 +39,11 @@ def main():
         parts = Path(name).parts
         if path.is_symlink() or any(x in PRIVATE_DIRS for x in parts):
             errors.append({"path": name, "reason": "private directory or symlink"})
-        if path.suffix.lower() in FORBIDDEN or (path.suffix.lower() in IMAGE_SUFFIXES and name not in ASSETS):
+        approved_document = (name in APPROVED_DOCUMENTS and
+                             hashlib.sha256(path.read_bytes()).hexdigest() == APPROVED_DOCUMENTS[name])
+        if (path.suffix.lower() in FORBIDDEN and not approved_document) or (path.suffix.lower() in IMAGE_SUFFIXES and name not in ASSETS):
             errors.append({"path": name, "reason": "research artifact or unreviewed image"})
-        if path.stat().st_size > 2_000_000:
+        if path.stat().st_size > 2_000_000 and not approved_document:
             errors.append({"path": name, "reason": "oversized file"})
         if SECRETS.search(path.read_bytes()):
             errors.append({"path": name, "reason": "credential-like content (value omitted)"})

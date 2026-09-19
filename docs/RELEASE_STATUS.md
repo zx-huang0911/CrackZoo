@@ -13,4 +13,4 @@
 
 新仓库以许可文本初始化，再提交完整源码，不继承旧私有仓库历史。远程 CI 见 [GitHub Actions](https://github.com/zx-huang0911/CrackZoo/actions)；本地短程训练通过不代表论文精度复现。
 
-许可依据和作者确认见 [release_review.json](../configs/release_review.json)。论文全文和演示网页可后续补充。
+许可依据和作者确认见 [release_review.json](../configs/release_review.json)。作者指定的[论文全文](paper/thesis.pdf)已随仓库发布，演示网页可后续补充。

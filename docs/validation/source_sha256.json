@@ -109,7 +109,7 @@
   "csnet/verify_model.py": "d0dffd12ed553709a0e21bc77ddd330da5cbd9bea15a30dbe0658b6d5aa6cba4",
   "csnet/verify_model_v2.py": "c548edb24bfe8c4121502309c9b7a2436a5c5e58fd3164d6a93ceca2962f900e",
   "scripts/audit_dataset.py": "1a6fcd2ea2dc8deb7ab8ad83d717c99e667d741f4fc00b68a7a2ad0ccb4e58e7",
-  "scripts/check_release.py": "a6a089bebe1f597fb7705b66360014958b960a42694ef83269f50aea626c135f",
+  "scripts/check_release.py": "281aab7636046c183a3faa9a8a9227bfde59c3e98e62fbd198be1cca4ed9b12c",
   "scripts/demo.py": "45d1a95d8aa5b36ddd053959b81c54e277f3b49e2059a359b468f28c681d1429",
   "scripts/evaluate_masks.py": "1f73301ad28aa5d6b666d0e4c99bee64f7f4a87016c9fb6eb8fbf2905b833ff9",
   "scripts/model_smoke.py": "af6eca5031d099ef12bb6d0fc8f4667c9a90a748ee13d0e73eaa644053ee5d1f",
